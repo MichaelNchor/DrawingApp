@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<!--load libraries-->
+    <script src="lib/p5.min.js"></script>
+    <script src="lib/p5.dom.js"></script>
+
+    <script src="sketch.js"></script>
+
+<!-- add extra scripts below -->
+    <script src="toolbox.js"></script>
+    <script src="colourPalette.js"></script>
+    <script src="helperFunctions.js"></script>
+
+<!-- All Tools-->
+    <script src="/Tools/freehandTool.js"></script>
+    <script src="/Tools/lineToTool.js"></script>
+    <script src="/Tools/sprayCanTool.js"></script>
+    <script src="/Tools/mirrorDrawTool.js"></script>
+    <script src="/Tools/StampTool.js"></script>
+    <script src="/Tools/Shapes.js"></script>
+    <script src="/Tools/Eraser.js"></script>
+    <script src="Tools/addImages.js"></script> 
+    <script src="Tools/textTool.js"></script>  
+    <script src="Tools/ScissorsTool.js"></script>  
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+  	<div class="wrapper">
+      <div class="box header" style="font-family: brightCandy">SketchPad
+        <button id="clearButton">Clear</button>
+        <button id="saveImageButton">Save Image</button>
+      </div>
+      <div class="box" id="sidebar"></div>
+      <div id="content"></div>
+      <div class="box colourPalette">
+          
+<!-- color pallette opacity and thicckness tools-->
+        <div id="tooloption">
+          Pick Color <input type="color" id="colorpicker">
+            Opacity <input type="number" id="alpha" step="0.05" max="1" min="0" value="1">
+            Thickness <input type="number" id="strokesize" max="100" min="1" value="3">
+        </div>
+        </div>
+      <div class="box options">
+        </div>
+	</div>
+  </body>
+</html>
+
+
